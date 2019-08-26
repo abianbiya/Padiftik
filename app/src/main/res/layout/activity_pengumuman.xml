@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengumumanActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/blue_bar"
+        android:id="@+id/rv_header"
+        >
+
+        <!--<Button-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/ic_info_black_24dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:id="@+id/btn_info"-->
+        <!--/>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_no_kartu"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:layout_marginTop="8dp"
+            android:maxLines="6"
+            android:fontFamily="@font/cera"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="Belum ada pengumuman. "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_id_kartu"
+            android:text="Update"
+            android:textStyle="italic"
+            android:fontFamily="@font/cera"
+            android:layout_above="@id/tv_no_kartu"
+            android:layout_alignStart="@id/tv_no_kartu"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_peternak"
+            android:text="Terbaru"
+            android:layout_above="@id/tv_id_kartu"
+            android:layout_alignEnd="@id/tv_no_kartu"
+            android:fontFamily="@font/cera"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/bg_rounded_white"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:layout_below="@id/rv_header"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:id="@+id/his"
+        android:fontFamily="@font/cera"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/blue"
+        android:layout_below="@id/his"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/his"
+        android:id="@+id/recycler"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

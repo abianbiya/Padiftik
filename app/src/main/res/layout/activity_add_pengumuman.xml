@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPengumumanActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/toolbar"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:visibility="gone"
+        android:id="@+id/jdl">
+
+        <AutoCompleteTextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:fontFamily="@font/cera"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cera"
+        android:text="Isi Pengumuman"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/label"/>
+
+        <EditText
+            android:id="@+id/isi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dear mahasiswa TI USM, \nTugas Algoritma Pemrograman silahkan dikirim via email ke dosen@mail.usm.ac.id dengan subject TUGAS ALPRO 2. Maksimal dikirim 20 Juli pukul 23.59. Terimakasih."
+            android:background="@drawable/bg_rounded_outline"
+            android:imeActionId="6"
+            android:gravity="top"
+            android:padding="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/label"
+            android:textSize="16sp"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:lines="8"
+            android:fontFamily="@font/cera" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@id/isi"
+        android:fontFamily="@font/cera"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="32dp"
+        android:id="@+id/save"
+        android:background="@drawable/bg_rounded_white"/>
+
+</RelativeLayout>

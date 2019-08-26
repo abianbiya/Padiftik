@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#18b4e8</color>
+    <color name="colorPrimaryDark">#0084b6</color>
+    <color name="colorAccent">#fd7a34</color>
+
+    <color name="pink">#ff2550</color>
+    <color name="blue">#68d2ec</color>
+    <color name="white">#ffffff</color>
+    <color name="transparents">#00000000</color>
+    <color name="transparents_grey">#815b5252</color>
+    <color name="transparents_grey2">#82000000</color>
+    <color name="transparents_grey3">#75b7b7b7</color>
+    <color name="transparents_black">#ab000000</color>
+    <color name="transparents_unnes_theme">#8cf7ca18</color>
+    <color name="orange">#fd7a34</color>
+    <color name="divider">#f2f2f2</color>
+
+    <color name="gray1">#667b9c</color>
+    <color name="gray2">#9799b6</color>
+    <color name="gray3">#ccc</color>
+    <color name="dark_gray">#55c1b7b7</color>
+
+    <color name="text1">#161616</color>
+    <color name="text2">#292929</color>
+    <color name="text3">#333333</color>
+    <color name="text4">#414141</color>
+
+    <color name="text_hint">#ccc</color>
+    <color name="text_gray">#9799b6</color>
+    <color name="text_darker_gray">#667b9c</color>
+    <color name="blue_bar">#18b4e8</color>
+    <color name="blue_dark">#0da3d6</color>
+
+
+    <color name="intro_purple">#7b72ff</color>
+    <color name="intro_purple_dark">#6c63ff</color>
+    <color name="intro_green">#3ce8ab</color>
+    <color name="intro_green_dark">#00b57c</color>
+</resources>

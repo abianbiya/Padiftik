@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_rounded_outline"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:visibility="gone"
+        android:fontFamily="@font/cera"
+        android:text="Contoh Judul"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isi"
+        android:text="The extension currently contributes just one command. Your Visual Studio Code environment can be configured to trigger this command with a custom keybinding or other action."
+        android:layout_below="@id/judul"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="timestamp"
+        android:layout_below="@id/isi"
+        android:id="@+id/ts"
+        android:textAlignment="textEnd"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/cera"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

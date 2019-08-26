@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:background="@drawable/logousm"
+            android:gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:id="@+id/logo"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingStart="8dp"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Papan Digital Fakultas"
+                android:fontFamily="@font/cera"
+                android:layout_marginBottom="2dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Teknologi Informasi dan Komunikasi"
+                android:fontFamily="@font/cera"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Universitas Semarang"
+                android:fontFamily="@font/cera"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/rl_atas"
+        android:layout_below="@id/linear"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_welcome_screen_yellow">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/hello_image"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"/>
+
+
+        <TextView
+            android:id="@+id/selamat_datang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang,"
+            android:fontFamily="@font/cera"
+            android:textSize="15sp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/welcome_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/hello_image"
+            android:text="M Anbiya Nur Islam"
+            android:layout_below="@id/selamat_datang"
+            android:fontFamily="@font/cera"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/welcome_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="97032618111559"
+            android:layout_below="@id/welcome_name"
+            android:fontFamily="@font/cera"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/rl_atas"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Kehadiran"
+            android:textSize="15sp"
+            android:fontFamily="@font/cera"
+            android:layout_marginTop="24dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_atas"
+            android:layout_marginTop="20dp"
+            android:id="@+id/switchnya"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Update: "
+            android:fontFamily="@font/cera"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Pengumuman"
+            android:fontFamily="@font/cera"
+            android:layout_marginTop="64dp"
+            android:id="@+id/button_pengumumuman"
+            android:background="@drawable/bg_rounded_outline"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="@null"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/cera"
+            android:layout_marginTop="16dp"
+            android:id="@+id/logout"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
